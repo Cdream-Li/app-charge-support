@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>记账狸</title>
+    <style>
+        :root {
+            --bg: #FFF9F3;
+            --card: #FFFFFF;
+            --text: #4A3E37;
+            --muted: #9E9E9E;
+            --accent: #D99A6A;
+            --accent-hover: #C8845A;
+            --surface: #FFF3E8;
+            --border: #EDE8E3;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 90%;
+            background: var(--card);
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 8px 30px rgba(200, 132, 90, 0.12);
+            text-align: center;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #F2C9AC 0%, #D99A6A 100%);
+            border-radius: 28px;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFFFFF;
+            font-size: 28px;
+            font-weight: 700;
+            box-shadow: 0 6px 18px rgba(217, 154, 106, 0.35);
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 16px;
+            color: var(--muted);
+            line-height: 1.7;
+            margin-bottom: 35px;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: block;
+            padding: 14px;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .btn-secondary {
+            background-color: var(--surface);
+            color: var(--accent);
+        }
+
+        .btn-secondary:hover {
+            background-color: #F7E8DA;
+        }
+
+        .footer {
+            font-size: 12px;
+            color: #BDBDBD;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="logo">记账狸</div>
+    <h1>记账狸</h1>
+    <p class="tagline">记账狸是一款温暖的 AI 个人记账应用，帮你轻松记录收支、管理资产。跟 AI 小助理聊一句，或上传支付截图，账单就能自动归类入账。</p>
+
+    <div class="btn-group">
+        <a href="support.html" class="btn btn-primary">技术支持</a>
+        <a href="privacy.html" class="btn btn-secondary">隐私政策</a>
+    </div>
+
+    <div class="footer">© 2026 记账狸. All rights reserved.</div>
+</div>
+
+</body>
+</html>
